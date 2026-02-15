@@ -47,7 +47,6 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
         $separator = version_compare(VERSION, '4.0.2.0', '>=') ? '.' : '|';
 
         $data['action'] = $this->url->link('extension/ps_product_category_filter/module/ps_product_category_filter' . $separator . 'save', 'user_token=' . $this->session->data['user_token']);
-        $data['fix_event_handler'] = $this->url->link('extension/ps_product_category_filter/module/ps_product_category_filter' . $separator . 'fixEventHandler', 'user_token=' . $this->session->data['user_token']);
         $data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=module');
 
         $data['module_ps_product_category_filter_status'] = (bool) $this->config->get('module_ps_product_category_filter_status');
@@ -107,32 +106,6 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
 
             $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->uninstall();
         }
-    }
-
-    public function fixEventHandler(): void
-    {
-        $this->load->language('extension/ps_product_category_filter/module/ps_product_category_filter');
-
-        $json = [];
-
-        if (!$this->user->hasPermission('modify', 'extension/ps_product_category_filter/module/ps_product_category_filter')) {
-            $json['error'] = $this->language->get('error_permission');
-        }
-
-        if (!$json) {
-            $this->load->model('setting/event');
-
-            $this->unregisterEvents();
-
-            if ($this->registerEvents() > 0) {
-                $json['success'] = $this->language->get('text_success');
-            } else {
-                $json['error'] = $this->language->get('error_event');
-            }
-        }
-
-        $this->response->addHeader('Content-Type: application/json');
-        $this->response->setOutput(json_encode($json));
     }
 
     private function unregisterEvents(): void

@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - Product to Category filter';
-$_['heading_fix']              = 'Исправление общих ошибок';
 $_['heading_getting_started']  = 'Начало работы';
 $_['heading_setup']            = 'Настройка модуля Product to Category filter';
 $_['heading_troubleshot']      = 'Распространенные проблемы';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'Статус';
 
 // Button
 $_['button_remove_filter']     = 'Удалить неиспользуемые фильтры';
-$_['button_fix_event_handler'] = 'Исправить обработчик событий';
 
 // Error
 $_['error_permission']         = 'Предупреждение: У вас нет прав для изменения модуля фильтра продукта для категории!';

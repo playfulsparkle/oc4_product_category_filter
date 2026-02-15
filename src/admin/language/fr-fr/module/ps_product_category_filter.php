@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - Product to Category filter';
-$_['heading_fix']              = 'Corriger les bugs courants';
 $_['heading_getting_started']  = 'Commencer';
 $_['heading_setup']            = 'Configuration du Product to Category filter';
 $_['heading_troubleshot']      = 'Dépannage Courant';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'Statut';
 
 // Button
 $_['button_remove_filter']     = 'Supprimer les filtres inutilisés';
-$_['button_fix_event_handler'] = 'Corriger le gestionnaire d\'événements';
 
 // Error
 $_['error_permission']         = 'Avertissement : Vous n\'avez pas la permission de modifier le module Product to Category filter !';

@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - Termék szűrő kategóriához';
-$_['heading_fix']              = 'Gyakori hibák javítása';
 $_['heading_getting_started']  = 'Kezdő lépések';
 $_['heading_setup']            = 'Termék szűrő kategóriához beállítása';
 $_['heading_troubleshot']      = 'Gyakori hibakeresési lépések';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'Állapot';
 
 // Button
 $_['button_remove_filter']     = 'Nem használt szűrők eltávolítása';
-$_['button_fix_event_handler'] = 'Eseménykezelő javítása';
 
 // Error
 $_['error_permission']         = 'Figyelem: Nincs jogosultsága a Termék szűrő kategóriához modul módosításához!';

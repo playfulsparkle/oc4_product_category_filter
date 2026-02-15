@@ -50,13 +50,6 @@
 							<h3>{{ heading_troubleshot }}</h3>
 							{{ text_troubleshot }}
 							<hr>
-							<h2>{{ heading_fix }}</h2>
-							<div class="row mb-3">
-								<div class="col-sm-10">
-									<button type="button" data-fix-action="{{ fix_event_handler }}" data-bs-toggle="tooltip" title="{{ button_fix_event_handler }}" class="btn btn-primary"><i class="fa-solid fa-gear"></i> {{ button_fix_event_handler }}</button>
-								</div>
-							</div>
-							<hr>
 							<h3>{{ heading_contact }}</h3>
 							{{ text_contact }}
 						</div>
@@ -68,35 +61,4 @@
 		</div>
 	</div>
 </div>
-<script>
-	$('button[data-fix-action]').on('click', function() {
-		var $this = $(this);
-		var action = $(this).data('fix-action');
-
-		$.ajax({
-			url: action,
-			dataType: 'json',
-			beforeSend: function () {
-				$($this).button('loading');
-			},
-			complete: function () {
-				$($this).button('reset');
-			},
-			success: function (json) {
-				$('.alert-dismissible').remove();
-
-				if (json['error']) {
-					$('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-				}
-
-				if (json['success']) {
-					$('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-				}
-			},
-			error: function (xhr, ajaxOptions, thrownError) {
-				console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-			}
-		});
-	});
-</script>
 {{ footer }}

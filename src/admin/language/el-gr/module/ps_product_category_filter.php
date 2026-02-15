@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - Φίλτρο Προϊόντων σε Κατηγορίες';
-$_['heading_fix']              = 'Διόρθωση κοινών σφαλμάτων';
 $_['heading_getting_started']  = 'Ξεκινώντας';
 $_['heading_setup']            = 'Ρύθμιση Φίλτρου Προϊόντων σε Κατηγορίες';
 $_['heading_troubleshot']      = 'Συνηθισμένη Αντιμετώπιση Προβλημάτων';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'Κατάσταση';
 
 // Button
 $_['button_remove_filter']     = 'Αφαίρεση αχρησιμοποίητων φίλτρων';
-$_['button_fix_event_handler'] = 'Διόρθωση Χειριστή Συμβάντων';
 
 // Error
 $_['error_permission']         = 'Προειδοποίηση: Δεν έχετε άδεια να τροποποιήσετε το module φίλτρου Προϊόντων σε Κατηγορίες!';

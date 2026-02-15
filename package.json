@@ -1,6 +1,6 @@
 {
   "name": "oc4_product_category_filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "layful Sparkle - Product to Category filter for OpenCart 4",
   "main": "index.js",
   "scripts": {

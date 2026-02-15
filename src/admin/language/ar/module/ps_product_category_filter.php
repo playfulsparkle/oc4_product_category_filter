@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - مرشح المنتج إلى الفئة';
-$_['heading_fix']              = 'إصلاح الأخطاء الشائعة';
 $_['heading_getting_started']  = 'ابدأ';
 $_['heading_setup']            = 'إعداد مرشح المنتج إلى الفئة Playful Sparkle';
 $_['heading_troubleshot']      = 'استكشاف الأخطاء وإصلاحها الشائعة';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'الحالة';
 
 // Button
 $_['button_remove_filter']     = 'إزالة المرشحات غير المستخدمة';
-$_['button_fix_event_handler'] = 'إصلاح معالج الأحداث';
 
 // Error
 $_['error_permission']         = 'تحذير: ليس لديك صلاحية تعديل وحدة مرشح المنتج إلى الفئة!';

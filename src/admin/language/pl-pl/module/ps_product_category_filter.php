@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - Filtr Produkt do Kategorii';
-$_['heading_fix']              = 'Napraw powszechne błędy';
 $_['heading_getting_started']  = 'Pierwsze kroki';
 $_['heading_setup']            = 'Konfiguracja filtra Produkt do Kategorii';
 $_['heading_troubleshot']      = 'Typowe rozwiązywanie problemów';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'Status';
 
 // Button
 $_['button_remove_filter']     = 'Usuń nieużywane filtry';
-$_['button_fix_event_handler'] = 'Napraw Obsługę Zdarzeń';
 
 // Error
 $_['error_permission']         = 'Ostrzeżenie: Nie masz uprawnień do modyfikowania modułu filtra Produkt do Kategorii!';

@@ -1,7 +1,6 @@
 <?php
 // Heading
 $_['heading_title']            = 'Playful Sparkle - Filter produktu do kategórie';
-$_['heading_fix']              = 'Oprava bežných chýb';
 $_['heading_getting_started']  = 'Začíname';
 $_['heading_setup']            = 'Nastavenie filtra produktu do kategórie';
 $_['heading_troubleshot']      = 'Bežné problémy';
@@ -26,7 +25,6 @@ $_['entry_status']             = 'Stav';
 
 // Button
 $_['button_remove_filter']     = 'Odstrániť nepoužívané filtre';
-$_['button_fix_event_handler'] = 'Opraviť spracovateľ udalostí';
 
 // Error
 $_['error_permission']         = 'Upozornenie: Nemáte oprávnenie na úpravu modulu Filter produktu do kategórie!';

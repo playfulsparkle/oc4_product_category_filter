@@ -3,7 +3,7 @@
     "description": "Automatically assign product filters to categories, save time, and improve page load speeds with easy filter management and removal.",
     "code": "ps_product_category_filter",
     "license": "GPL",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Playful Sparkle",
     "link": "https://github.com/playfulsparkle/oc4_product_category_filter.git"
   }
