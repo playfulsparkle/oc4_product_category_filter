@@ -84,28 +84,24 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
 
     public function install(): void
     {
-        if ($this->user->hasPermission('modify', 'extension/module')) {
-            $this->load->model('setting/event');
+        $this->load->model('setting/event');
 
-            $this->registerEvents();
+        $this->registerEvents();
 
-            $this->load->model('extension/ps_product_category_filter/module/ps_product_category_filter');
+        $this->load->model('extension/ps_product_category_filter/module/ps_product_category_filter');
 
-            $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->install();
-        }
+        $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->install();
     }
 
     public function uninstall(): void
     {
-        if ($this->user->hasPermission('modify', 'extension/module')) {
-            $this->load->model('setting/event');
+        $this->load->model('setting/event');
 
-            $this->unregisterEvents();
+        $this->unregisterEvents();
 
-            $this->load->model('extension/ps_product_category_filter/module/ps_product_category_filter');
+        $this->load->model('extension/ps_product_category_filter/module/ps_product_category_filter');
 
-            $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->uninstall();
-        }
+        $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->uninstall();
     }
 
     private function unregisterEvents(): void
