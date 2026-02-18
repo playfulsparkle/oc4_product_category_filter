@@ -84,6 +84,14 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
 
     public function install(): void
     {
+        $this->load->model('setting/setting');
+
+        $data = [
+            'module_ps_product_category_filter_status' => 0,
+        ];
+
+        $this->model_setting_setting->editSetting('module_ps_product_category_filter', $data);
+
         $this->load->model('setting/event');
 
         $this->registerEvents();
