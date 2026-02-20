@@ -8,7 +8,7 @@ $_['text_extension']           = 'Estensioni';
 $_['text_success']             = 'Successo: Hai modificato il modulo Product to Category filter!';
 $_['text_filter_success']      = 'Successo: I filtri non utilizzati sono stati rimossi con successo!';
 $_['text_edit']                = 'Modifica il modulo Product to Category filter';
-$_['text_contact']             = '<p>Per ulteriori assistenze, contatta il nostro team di supporto:</p><ul><li><strong>Contatto:</strong> <a href="mailto:%s">%s</a></li><li><strong>Documentazione:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Documentazione utente</a></li></ul>';
+$_['text_contact']             = '<p>Per ulteriore assistenza, contatta il nostro team di supporto:</p><ul><li><strong>Contatto:</strong> <a href="mailto:%s">%s</a></li><li><strong>Documentazione:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Documentazione Utente</a></li></ul>';
 
 // Tab
 $_['tab_general']              = 'Generale';
