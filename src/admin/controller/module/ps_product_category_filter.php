@@ -40,7 +40,7 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
 
         $data['breadcrumbs'][] = [
             'text' => $this->language->get('heading_title'),
-            'href' => $this->url->link('extension/module/ps_product_category_filter', 'user_token=' . $this->session->data['user_token'], true),
+            'href' => $this->url->link('extension/ps_product_category_filter/module/ps_product_category_filter', 'user_token=' . $this->session->data['user_token'], true),
         ];
 
 
