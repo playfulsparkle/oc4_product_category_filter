@@ -158,7 +158,16 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
         return $result;
     }
 
-    public function eventAdminModelCatalogProductEditProductAfter(string &$route, array &$args): void
+    /**
+     * Event: admin/model/catalog/product.editProduct/after
+     *
+     * @param string $route
+     * @param array $args
+     * @param string|null $output
+     *
+     * @return void
+     */
+    public function eventAdminModelCatalogProductEditProductAfter(&$route, &$args, &$output)
     {
         if (!$this->config->get('module_ps_product_category_filter_status')) {
             return;
@@ -175,7 +184,16 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
         $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->addFilters($data);
     }
 
-    public function eventAdminViewCatalogCategoryFormBefore(string &$route, array &$args, string &$template): void
+    /**
+     * Event: admin/view/catalog/category_form/before
+     *
+     * @param string $route
+     * @param array $args
+     * @param string $output
+     *
+     * @return void
+     */
+    public function eventAdminViewCatalogCategoryFormBefore(&$route, &$args, &$output)
     {
         if (!$this->config->get('module_ps_product_category_filter_status')) {
             return;
@@ -214,9 +232,10 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
             $args['remove_filter'] = '';
         }
 
-        $headerViews = $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->replaceHeaderViews($args);
 
-        $template = $this->replaceViews($route, $template, $headerViews);
+        $views = $this->model_extension_ps_product_category_filter_module_ps_product_category_filter->replaceHeaderViews($args);
+
+        $output = $this->replaceViews($route, $output, $views);
     }
 
     public function removeunused()
@@ -422,7 +441,7 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
      * If positions are specified, the method performs replacements only at those positions.
      *
      * @param string $route The route associated with the template.
-     * @param string $template The name of the template to be processed.
+     * @param string|null $template The name of the template to be processed.
      * @param array $views An array of associative arrays where each associative array contains:
      *                     - string 'search': The string to search for in the template.
      *                     - string 'replace': The string to replace the 'search' string with.
@@ -432,8 +451,16 @@ class PsProductCategoryFilter extends \Opencart\System\Engine\Controller
      *
      * @return mixed The modified template content after performing the replacements.
      */
-    protected function replaceViews(string $route, string $template, array $views): mixed
+    protected function replaceViews(string $route, string|null $template, array $views): mixed
     {
+        if (is_null($template)) {
+            $template = '';
+        }
+
+        if (empty($views)) {
+            return $this->getTemplateBuffer($route, $template);
+        }
+
         $output = $this->getTemplateBuffer($route, $template);
 
         foreach ($views as $view) {
