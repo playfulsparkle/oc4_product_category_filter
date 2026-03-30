@@ -8,7 +8,7 @@ $_['text_extension']           = 'Rozšíření';
 $_['text_success']             = 'Úspěch: Modifikace modulu Filtr Produktů do Kategorie byla úspěšně provedena!';
 $_['text_filter_success']      = 'Úspěch: Nepoužívané filtry byly úspěšně odstraněny!';
 $_['text_edit']                = 'Upravit modul Filtr Produktů do Kategorie';
-$_['text_contact']             = '<p>Pro další pomoc se prosím obraťte na náš tým podpory:</p><ul><li><strong>Kontakt:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentace:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Dokumentace pro uživatele</a></li></ul>';
+$_['text_contact']             = '<p>Pro další pomoc se prosím obraťte na náš tým podpory:</p><ul><li><strong>Webová stránka podpory:</strong> <a href="%1$s">%1$s</a></li><li><strong>GitHub repozitář:</strong> <a href="%2$s" target="_blank" rel="noopener noreferrer">%2$s</a></li><li><strong>Kontaktovat podporu:</strong> <a href="mailto:%3$s">%3$s</a></li></ul>';
 
 // Tab
 $_['tab_general']              = 'Obecné';

@@ -8,7 +8,7 @@ $_['text_extension']           = '擴充功能';
 $_['text_success']             = '成功：您已修改 Playful Sparkle - 商品至分類過濾器模組！';
 $_['text_filter_success']      = '成功：未使用的過濾器已成功移除！';
 $_['text_edit']                = '編輯 Playful Sparkle - 商品至分類過濾器模組';
-$_['text_contact']             = '<p>如需進一步協助，請聯繫我們的支援團隊：</p><ul><li><strong>聯繫方式：</strong> <a href="mailto:%s">%s</a></li><li><strong>使用說明：</strong> <a href="%s" target="_blank" rel="noopener noreferrer">用戶文檔</a></li></ul>';
+$_['text_contact']             = '<p>如需進一步協助，請聯繫我們的支援團隊：</p><ul><li><strong>支援網站：</strong> <a href="%1$s">%1$s</a></li><li><strong>GitHub 倉庫：</strong> <a href="%2$s" target="_blank" rel="noopener noreferrer">%2$s</a></li><li><strong>聯繫支援：</strong> <a href="mailto:%3$s">%3$s</a></li></ul>';
 
 // Tab
 $_['tab_general']              = '一般設定';

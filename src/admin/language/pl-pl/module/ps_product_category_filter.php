@@ -8,7 +8,7 @@ $_['text_extension']           = 'Rozszerzenia';
 $_['text_success']             = 'Sukces: Zmodyfikowano moduł filtra Produkt do Kategorii!';
 $_['text_filter_success']      = 'Sukces: Nieużywane filtry zostały pomyślnie usunięte!';
 $_['text_edit']                = 'Edytuj moduł filtra Produkt do Kategorii';
-$_['text_contact']             = '<p>W celu uzyskania dodatkowej pomocy prosimy o kontakt z zespołem wsparcia:</p><ul><li><strong>Kontakt:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentacja:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Dokumentacja użytkownika</a></li></ul>';
+$_['text_contact']             = '<p>Aby uzyskać dalszą pomoc, prosimy o kontakt z naszym zespołem wsparcia:</p><ul><li><strong>Strona wsparcia:</strong> <a href="%1$s">%1$s</a></li><li><strong>Repozytorium GitHub:</strong> <a href="%2$s" target="_blank" rel="noopener noreferrer">%2$s</a></li><li><strong>Kontakt z pomocą techniczną:</strong> <a href="mailto:%3$s">%3$s</a></li></ul>';
 
 // Tab
 $_['tab_general']              = 'Ogólne';
