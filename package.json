@@ -9,9 +9,11 @@
   "keywords": [
     "opencart",
     "opencart4",
+    "opencart-extension",
     "playfulsparkle",
-    "product filter",
-    "category filter"
+    "product-filter",
+    "category-filter",
+    "filter-management"
   ],
   "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
   "license": "GPL",
